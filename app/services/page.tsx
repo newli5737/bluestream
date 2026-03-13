@@ -12,7 +12,7 @@ export default function ServicesPage() {
         title="Dịch vụ vận chuyển"
         highlight="toàn diện"
         subtitle="Đầy đủ giải pháp logistics từ vận chuyển đường biển, hàng không, nội địa đến kho bãi và khai báo hải quan."
-        imageUrl="/hero-services.png"
+        imageUrl="/services-hero.avif"
         imageAlt="Tàu container cảng biển hoàng hôn"
         ctaText="Báo giá ngay"
         ctaHref="/contact"

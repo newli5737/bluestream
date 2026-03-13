@@ -12,7 +12,7 @@ export default function ContactPage() {
         title="Hãy để chúng tôi"
         highlight="hỗ trợ bạn"
         subtitle="Đội ngũ chuyên gia luôn sẵn sàng 24/7. Nhận báo giá miễn phí trong vòng 2 giờ làm việc."
-        imageUrl="/hero-contact.png"
+        imageUrl="/contact-hero.jpg"
         imageAlt="Đội ngũ chuyên gia logistics"
         height="medium"
       />
