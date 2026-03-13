@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0B3D91;
+  --color-primary-dark: #061a4a;
+  --color-primary-light: #1e5bb8;
+  --color-accent: #FF6B35;
+  --color-accent-dark: #e85a20;
+}
+
+:root {
+  --primary: #0B3D91;
+  --primary-dark: #061a4a;
+  --primary-light: #1e5bb8;
+  --accent: #FF6B35;
+  --accent-dark: #e85a20;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #1e293b;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #0B3D91;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1e5bb8;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #0B3D91, #FF6B35);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glass effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Hero overlay */
+.hero-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(11, 61, 145, 0.92) 0%,
+    rgba(11, 61, 145, 0.75) 50%,
+    rgba(11, 61, 145, 0.5) 100%
+  );
+}
+
+/* Animated gradient bg for hero */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-gradient {
+  background: linear-gradient(-45deg, #061a4a, #0B3D91, #1e3a6e, #0b2d5e);
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+}
+
+/* Float animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.float-animation {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Pulse glow */
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 107, 53, 0.4); }
+  50% { box-shadow: 0 0 30px 10px rgba(255, 107, 53, 0.1); }
+}
+
+.pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+/* Particle dots */
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Line clamp - Tailwind v4 should handle these but adding as backup */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
